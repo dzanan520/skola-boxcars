@@ -1,0 +1,12 @@
+<svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_1047_1489" fill="white">
+<path d="M0 0H8V4H0V0Z"/>
+</mask>
+<g clip-path="url(#paint0_diamond_1047_1489_clip_path)" data-figma-skip-parse="true" mask="url(#path-1-inside-1_1047_1489)"><g transform="matrix(0.004 0 0 0.004 4 0)"><rect x="0" y="0" width="2000" height="2000" fill="url(#paint0_diamond_1047_1489)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="2000" height="2000" transform="scale(1 -1)" fill="url(#paint0_diamond_1047_1489)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="2000" height="2000" transform="scale(-1 1)" fill="url(#paint0_diamond_1047_1489)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="2000" height="2000" transform="scale(-1)" fill="url(#paint0_diamond_1047_1489)" opacity="1" shape-rendering="crispEdges"/></g></g><path d="M0 0V-4H-4V0H0ZM8 0H12V-4H8V0ZM0 4H8V-4H0V4ZM4 0V4H12V0H4ZM4 4V0H-4V4H4Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.019607843831181526,&#34;g&#34;:0.043137256056070328,&#34;b&#34;:0.12549020349979401,&#34;a&#34;:1.0},&#34;position&#34;:0.99999988079071045},{&#34;color&#34;:{&#34;r&#34;:0.0,&#34;g&#34;:0.0,&#34;b&#34;:0.0,&#34;a&#34;:0.0},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.019607843831181526,&#34;g&#34;:0.043137256056070328,&#34;b&#34;:0.12549020349979401,&#34;a&#34;:1.0},&#34;position&#34;:0.99999988079071045},{&#34;color&#34;:{&#34;r&#34;:0.0,&#34;g&#34;:0.0,&#34;b&#34;:0.0,&#34;a&#34;:0.0},&#34;position&#34;:1.0}],&#34;transform&#34;:{&#34;m00&#34;:8.0,&#34;m01&#34;:0.0,&#34;m02&#34;:0.0,&#34;m10&#34;:0.0,&#34;m11&#34;:8.0,&#34;m12&#34;:-4.0},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}" mask="url(#path-1-inside-1_1047_1489)"/>
+<defs>
+<clipPath id="paint0_diamond_1047_1489_clip_path"><path d="M0 0V-4H-4V0H0ZM8 0H12V-4H8V0ZM0 4H8V-4H0V4ZM4 0V4H12V0H4ZM4 4V0H-4V4H4Z" mask="url(#path-1-inside-1_1047_1489)"/></clipPath><linearGradient id="paint0_diamond_1047_1489" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+<stop offset="1" stop-color="#050B20"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
