@@ -34,6 +34,13 @@
 
 /* Glave klase */
 
+h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+}
+
 .head {
     background-color: #fff;
     padding: 28px 60px 28px 60px;
@@ -53,7 +60,7 @@
     row-gap: 10px;
 }
 
-.headL>span {
+.headL > span {
     margin-left: 10px;
 }
 
@@ -61,7 +68,7 @@
     margin: 0 auto;
 }
 
-.headC>nav>ul {
+.headC > nav > ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -86,7 +93,7 @@
     align-items: center;
 }
 
-.headR>button {
+.headR > button {
     border-radius: 16px;
     border: 1px solid #050B20;
     background: #FFF;
@@ -107,7 +114,7 @@
     overflow: hidden;
 }
 
-.car-img>img {
+.car-img > img {
     margin-bottom: -65px;
     width: 1166px;
 }
@@ -118,22 +125,51 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.dream-car > span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.6px; /* 185% */
+}
+
+.dream-car > h2 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 100% */
+}
+
 .car-banner {
     text-align: center;
 }
 
-.car-banner>div {
+.car-banner > div {
     display: inline-block;
     background-color: #fff;
-    width: 800px;
+    width: 1430px;
     height: 100px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* Mobile stil */
+.type-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Media queries */
+@media (max-width:1440px){
+    .car-banner > div { 
+        width: 80%;
+    }
+}
+
 @media (max-width: 1190px) {
     .head-container {
         flex-direction: column;
+        gap: 20px;
     }
 
     .head {
@@ -144,11 +180,31 @@
         justify-content: center;
     }
 
-    .car-img>img {
+    .car-img > img {
         width: 100%;
     }
 
-    .car-banner>div {
-        width: 100%;
+    .headC > nav > ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 660px) {
+    .car-img > img {
+        margin-bottom: -45px;
+    }
+
+    .dream-car > h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 485px) {
+    .car-img > img {
+        margin-bottom: -35px;
+    }
+
+    .dream-car > h2 {
+        font-size: 35px;
     }
 }
