@@ -38,7 +38,8 @@ h2 {
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; /* 100% */
+    line-height: 40px;
+    /* 100% */
 }
 
 .head {
@@ -104,7 +105,6 @@ h2 {
     font-style: normal;
     font-weight: 500;
     line-height: 27.75px;
-    /* 185% */
     height: 47.75px;
     width: 142px;
     cursor: pointer;
@@ -129,14 +129,16 @@ h2 {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29.6px; /* 185% */
+    line-height: 29.6px;
+    /* 185% */
 }
 
-.dream-car > h2 {
+.dream-car>h2 {
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
-    line-height: 70px; /* 100% */
+    line-height: 70px;
+    /* 100% */
 }
 
 .car-banner {
@@ -157,12 +159,142 @@ h2 {
     align-items: center;
 }
 
+.nav-types ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
 
+.nav-types a div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 138px;
+    padding-top: 23px;
+    border-radius: 16px;
+    border: 1px solid #E9E9E9;
+    background: #FFF;
+}
+
+.nav-types a{
+    text-decoration: none;
+}
+
+.type-boxes {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.boxL {
+    background-color: #E9F2FF; 
+    width: 685px; 
+    height: 393.72px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding-left: 80px;
+}
+
+.boxL > h2 {
+    margin-top: 80px;
+    width: 233.5px;
+    height: 90px;
+    font-size: 30px;
+}
+
+.boxL > span {
+    width: 355.39px;
+    height: 55.5px;
+}
+
+.boxL > button {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 59.995px; 
+    width: 158.94px;
+    gap: 9.672px; 
+    border-radius: 12px;
+    border: 1px solid #405FF2;
+    background: #405FF2;
+    cursor: pointer;
+}
+
+.boxL > button > span {
+    width: 83.268px;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.boxL > img {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    margin-left: 457px;
+    margin-top: 233.72px;
+}
+
+.boxR {
+    background-color: #FFE9F3; 
+    width: 685px; 
+    height: 393.72px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding-left: 80px;
+}
+
+.boxR > h2 {
+    margin-top: 80px;
+    width: 233.5px;
+    height: 90px;
+    font-size: 30px;
+}
+
+.boxR > span {
+    width: 355.39px;
+    height: 55.5px;
+}
+
+.boxR > button {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 59.995px; 
+    width: 158.94px;
+    gap: 9.672px; 
+    border-radius: 12px;
+    border: 1px solid #050B20;
+    background: #050B20;
+    cursor: pointer;
+}
+
+.boxR > button > span {
+    width: 83.268px;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.boxR > img {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    margin-left: 457px;
+    margin-top: 233.72px;
+}
 
 /* Media queries */
-@media (max-width:1440px){
-    .car-banner > div { 
+@media (max-width:1440px) {
+    .car-banner>div {
         width: 80%;
+    }
+
+    .nav-types ul {
+        flex-wrap: wrap;
     }
 }
 
@@ -187,6 +319,10 @@ h2 {
     .headC > nav > ul {
         gap: 20px;
     }
+}
+
+@media (max-width: 800px) {
+
 }
 
 @media (max-width: 660px) {
