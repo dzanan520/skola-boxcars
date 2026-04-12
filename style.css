@@ -504,6 +504,28 @@ h2 {
     }
 }
 
+
+@media (max-width: 960px) {
+    .forma {
+        width: 80%;
+    }
+
+    .forma select {
+        width: 80%;
+        border: 1px solid #E9E9E9;
+        margin-bottom: 20px;
+    }
+
+    .forma .bb {
+        border: 1px solid #E9E9E9;
+    }
+
+    .forma button {
+        width: 80%;
+    }
+}
+
+
 @media (max-width: 800px) {
     .adv-card {
         width: 80%;
