@@ -137,14 +137,22 @@ a {
 
 .mb-15 {
     margin-bottom: 15px;
-} 
+}
+
+.ml-260{
+    margin-left: 260px;
+}
+
+.ml-240 {
+    margin-left: 240px;
+}
 
 .ml-10 {
     margin-left: 10px;
 }
 
 .pt-20 {
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .pt-115 {
@@ -529,6 +537,41 @@ h2 {
     margin-right: 180px;
 }
 
+.inspiration-container > div {
+    padding-left: 260px;
+    padding-bottom: 25px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.inspiration-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding-top: 20px;
+}
+
+.inspiration-button {
+    display: flex;
+    width: 178.02px;
+    height: 60px;
+    padding: 0 25.409px 0 26px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid #E1E1E1;
+    background: #FFF;
+    
+    color: #050B20;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+}
+
 /* Media queries */
 
 @media (max-width:1800px) {
@@ -570,6 +613,17 @@ h2 {
     }
 }
 
+@media (max-width: 1080px) {
+    .inspiration-container > div{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .inspiration-buttons {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
 
 @media (max-width: 1000px) {
     .forma {
@@ -611,10 +665,18 @@ h2 {
     .dream-car-container > h2 {
         font-size: 35px;
     }
+
+    .inspiration-container h2 {
+        font-size: 30px;
+    }
 }
 
 @media (max-width:378px) {
     .why-choose-container > h2 {
         font-size: 30px;
+    }
+
+    .inspiration-container h2 {
+        font-size: 25px;
     }
 }
