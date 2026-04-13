@@ -95,6 +95,10 @@ a {
     row-gap: 40px;
 }
 
+.mt-115 {
+    margin-top: 115px;
+}
+
 .mt-100 {
     margin-top: 100px;
 }
@@ -105,6 +109,10 @@ a {
 
 .mt-10 {
     margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
 }
 
 .mt-20 {
@@ -141,6 +149,10 @@ a {
 
 .pt-115 {
     padding-top: 115px;
+}
+
+.pl-260 {
+    padding-left: 260px;
 }
 
 .text-white {
@@ -465,6 +477,56 @@ h2 {
 
 .reason {
     width: 311.28px;
+}
+
+.latest-cars-container h2 {
+    text-align: center;
+    margin-top: 115px;
+    padding-bottom: 25px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bookmark {
+    border-radius: 18px;
+    background: #FFF;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 272px;
+}
+
+.great-price {
+    display: flex;
+    width: 104.23px;
+    height: 29.89px;
+    padding: 1.05px 14.686px 2.94px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #3D923A;
+    position: absolute;
+    margin-top: 23px;
+    margin-right: 190px;
+}
+
+.low-mileage {
+    display: flex;
+    width: 110.38px;
+    height: 29.89px;
+    padding: 1.05px 14.676px 2.94px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #405FF2;
+    position: absolute;
+    margin-top: 23px;
+    margin-right: 180px;
 }
 
 /* Media queries */
