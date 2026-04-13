@@ -107,6 +107,10 @@ a {
     margin-top: 50px;
 }
 
+.mt-40 {
+    margin-top: 40px;
+}
+
 .mt-10 {
     margin-top: 10px;
 }
@@ -760,6 +764,18 @@ h2 {
     border-radius: 16px;
     border: 1px solid #E9E9E9;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 65px;
+    border-top: 1px solid #E1E1E1;
+
+    padding: 55px 170px;
+}
+
 
 /* Media queries */
 
