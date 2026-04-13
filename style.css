@@ -119,6 +119,10 @@ a {
     margin-top: 20px;
 }
 
+.mb-150 {
+    margin-bottom: 150px;
+}
+
 .mb-115 {
     margin-bottom: 115px;
 }
@@ -173,6 +177,10 @@ a {
 
 .shadow-b {
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.border-radius-16 {
+    border-radius: 16px;
 }
 
 /* Glavne klase */
@@ -643,6 +651,85 @@ h2 {
     padding-bottom: 25px;
 }
 
+.posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 447px;
+}
+
+.corner {
+    display: flex;
+    height: 35.89px;
+    padding: 4.05px 14.672px 5.94px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #fff;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+}
+
+.post-naslov {
+    font-size: 20px;
+}
+
+.premium-brands-container {
+    width: 1700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 150px;
+    border-radius: 16px;
+    border: 1px solid #F9FBFC;
+    background: #F9FBFC;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.premium-brands-text {
+    width: 503px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.premium-brands-text button {
+    display: flex;
+    width: 188.36px;
+    height: 53.22px;
+    padding: 0 26px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 9.626px;
+    border-radius: 12px;
+    border: 1px solid #405FF2;
+    background: #405FF2;
+}
+
+.premium-brands-text button > div > span {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    /* 100% */
+}
+
 /* Media queries */
 
 @media (max-width:1800px) {
@@ -653,6 +740,17 @@ h2 {
 
 @media (max-width: 1700px) {
     .BoxCar-container {
+        width: 90%;
+    }
+
+    .premium-brands-container {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .logo {
         width: 90%;
     }
 }
@@ -732,6 +830,11 @@ h2 {
     .dream-car-container > h2 {
         font-size: 50px;
     }
+
+    .logo {
+        width: 350px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 485px) {
@@ -757,6 +860,14 @@ h2 {
 
     .inspiration-container h2 {
         font-size: 30px;
+    }
+
+    .post {
+        width: 300px;
+    }
+
+    .logo {
+        width: 300px;
     }
 }
 
