@@ -159,6 +159,10 @@ a {
     padding-top: 115px;
 }
 
+.pb-10 {
+    padding-bottom: 10px;
+}
+
 .pl-260 {
     padding-left: 260px;
 }
@@ -424,6 +428,13 @@ h2 {
     background: #050B20;
 }
 
+.ms-container h2 {
+    text-align: center;
+    margin-top: 115px;
+    padding-bottom: 25px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 .sale-card {
     width: 328px;
     border-radius: 16px;
@@ -605,6 +616,33 @@ h2 {
     color: #fff;
 }
 
+.our-team-naslov {
+    text-align: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 115px;
+    margin-bottom: 15px;
+}
+
+.our-team-container h3 {
+    font-size: 20px;
+    position: absolute; 
+    margin-top: 25px;
+}
+
+.our-team-container span {
+    font-size: 14px;
+    position: absolute;
+    margin-top: 57px;
+}
+
+.our-team-container img {
+    border-radius: 16px;
+}
+
+.our-team-naslov h2 {
+    padding-bottom: 25px;
+}
+
 /* Media queries */
 
 @media (max-width:1800px) {
@@ -705,6 +743,18 @@ h2 {
         font-size: 35px;
     }
 
+    .ms-container h2 {
+        font-size: 30px;
+    }
+
+    .stock {
+        row-gap: 0;
+    }
+
+    .ms-container > div:first-of-type a {
+        font-size: 13px;
+    }
+
     .inspiration-container h2 {
         font-size: 30px;
     }
@@ -716,6 +766,10 @@ h2 {
     }
 
     .inspiration-container h2 {
+        font-size: 25px;
+    }
+
+    .ms-container h2 {
         font-size: 25px;
     }
 
