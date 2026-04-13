@@ -730,6 +730,37 @@ h2 {
     /* 100% */
 }
 
+.join-boxcar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.sign-up {
+    width: 115.31px;
+    height: 51.75px;
+    padding: 11.125px 30.637px 12.875px 31px;
+    border-radius: 16px;
+    border: 1px solid #405FF2;
+    background: #405FF2;
+}
+
+.sign-up span {
+    color: #fff;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 567px;
+    padding: 11px 11px 11px 12px;
+    border-radius: 16px;
+    border: 1px solid #E9E9E9;
+}
+
 /* Media queries */
 
 @media (max-width:1800px) {
@@ -834,6 +865,16 @@ h2 {
     .logo {
         width: 350px;
         text-align: center;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .sign-up {
+        width: 10%;
+        display: flex;
+        justify-content: center;
     }
 }
 
