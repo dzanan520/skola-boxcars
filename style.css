@@ -19,6 +19,10 @@ a {
 
 
 /* Pomocne klase */
+.separator {
+    border-top: 1px solid #E1E1E1;
+    width: 100%;
+}
 
 .flex-row {
     display: flex;
@@ -769,11 +773,9 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     row-gap: 65px;
-    border-top: 1px solid #E1E1E1;
-
-    padding: 55px 170px;
+    padding: 55px 0px;
 }
 
 
