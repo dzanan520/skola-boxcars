@@ -274,14 +274,23 @@ h2 {
     justify-content: center;
     width: 1000px;
     margin: 0 auto;
-    padding: 10px 9.98px 10px 5px;
+    padding: 10px 10px 10px 5px;
     border-radius: 80px;
     background: #FFF;
 }
 
 .opcija-container {
-    width: 210.39px; 
+    width: 210px;
     padding: 0 6px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    font-family: "DM Sans";
+    color: #050B20;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
 }
 
 .opcija-arrow-down {
@@ -299,7 +308,7 @@ h2 {
 
 .forma button {
     width: 55px;
-    padding: 17px 0 23.75px 0;
+    padding: 17px 0 24px 0;
     border-radius: 60px;
     border: 1px solid #405FF2;
     background: #405FF2;
@@ -326,7 +335,7 @@ h2 {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29.6px;
+    line-height: 30px;
     /* 185% */
 }
 
@@ -369,7 +378,7 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 138px;
-    padding: 26px 17.775px 26.79px 21px;
+    padding: 26px 18px 27px 21px;
     border-radius: 16px;
     border: 1px solid #E9E9E9;
     background: #FFF;
@@ -398,7 +407,7 @@ h2 {
 }
 
 .adv-card-content h2 {
-    width: 233.5px;
+    width: 234px;
     height: 90px;
     font-size: 30px;
 }
@@ -408,9 +417,9 @@ h2 {
     display: flex; 
     justify-content: center;
     align-items: center; 
-    height: 59.995px; 
-    width: 158.94px;
-    gap: 9.672px; 
+    height: 60px; 
+    width: 159px;
+    gap: 10px; 
     border-radius: 12px;
     border: 0;
     cursor: pointer;
@@ -448,7 +457,6 @@ h2 {
     text-align: center;
     margin-top: 115px;
     padding-bottom: 25px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .sale-card {
@@ -518,7 +526,6 @@ h2 {
     text-align: center;
     margin-top: 115px;
     padding-bottom: 25px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .bookmark {
@@ -538,9 +545,9 @@ h2 {
 
 .great-price {
     display: flex;
-    width: 104.23px;
-    height: 29.89px;
-    padding: 1.05px 14.686px 2.94px 15px;
+    width: 105px;
+    height: 30px;
+    padding: 1px 15px 3px 15px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
@@ -552,9 +559,9 @@ h2 {
 
 .low-mileage {
     display: flex;
-    width: 110.38px;
-    height: 29.89px;
-    padding: 1.05px 14.676px 2.94px 15px;
+    width: 115px;
+    height: 30px;
+    padding: 1px 15px 3px 15px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
@@ -564,13 +571,10 @@ h2 {
     margin-right: 180px;
 }
 
-.inspiration-container > div:first-of-type {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
 .inspiration-container > div {
-    padding-left: 260px;
     padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .inspiration-buttons {
@@ -584,7 +588,7 @@ h2 {
 
 .inspiration-button {
     display: flex;
-    width: 178.02px;
+    width: 179px;
     height: 60px;
     padding: 0 25.409px 0 26px;
     justify-content: center;
@@ -625,6 +629,7 @@ h2 {
     width: 295px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -634,7 +639,6 @@ h2 {
 
 .our-team-naslov {
     text-align: center;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     margin-top: 115px;
     margin-bottom: 15px;
 }
@@ -676,8 +680,8 @@ h2 {
 
 .corner {
     display: flex;
-    height: 35.89px;
-    padding: 4.05px 14.672px 5.94px 15px;
+    height: 36px;
+    padding: 4px 15px 6px 15px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
@@ -717,12 +721,12 @@ h2 {
 
 .premium-brands-text button {
     display: flex;
-    width: 188.36px;
-    height: 53.22px;
+    width: 189px;
+    height: 53px;
     padding: 0 26px;
     justify-content: center;
     align-items: center;
-    column-gap: 9.626px;
+    column-gap: 10px;
     border-radius: 12px;
     border: 1px solid #405FF2;
     background: #405FF2;
@@ -747,9 +751,9 @@ h2 {
 }
 
 .sign-up {
-    width: 115.31px;
-    height: 51.75px;
-    padding: 11.125px 30.637px 12.875px 31px;
+    width: 115px;
+    height: 52px;
+    padding: 11px 31px 13px 31px;
     border-radius: 16px;
     border: 1px solid #405FF2;
     background: #405FF2;
@@ -784,6 +788,12 @@ h2 {
 @media (max-width:1800px) {
     .why-choose-container {
         width: 90%;
+    }
+
+    .premium-brands-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
     }
 }
 
@@ -841,17 +851,7 @@ h2 {
     }
 }
 
-@media (max-width: 1080px) {
-    .inspiration-container > div{
-        padding-left: 0;
-        text-align: center;
-    }
 
-    .inspiration-buttons {
-        margin-left: 0;
-        justify-content: center;
-    }
-}
 
 @media (max-width: 1000px) {
     .forma {
@@ -860,9 +860,39 @@ h2 {
     }
 
     .opcija {
-        width: auto;
         flex: 1;
         min-width: 0;
+    }
+
+    .why-choose-container h2 {
+        font-size: 28px;
+    }
+
+    .reason {
+        width: 45%;
+    }
+
+    .reason img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .reason h3 {
+        font-size: 15px;
+    }
+
+    .reason span, 
+    .reason p {
+        font-size: 13px;
+    }
+
+     .footer {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer > div {
+        width: 28%;
     }
 }
 
@@ -872,6 +902,53 @@ h2 {
         width: 90%;
         flex-wrap: wrap;
         padding: 80px 50px;
+    }
+
+    .adv-card-content h2 {
+        font-size: 24px;
+        height: auto;
+        width: auto;
+    }
+
+    .adv-card-content span {
+        font-size: 13px;
+    }
+
+    .adv-card-content button {
+        height: 48px;
+        width: 130px;
+        font-size: 13px;
+    }
+
+    .adv-card-img img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .premium-brands-container {
+        padding: 60px 40px;
+    }
+
+    .premium-brands-text h2 {
+        font-size: 28px;
+    }
+
+    .premium-brands-text span {
+        font-size: 13px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer > div {
+        width: 45%;
+    }
+
+    .footer h2 {
+        font-size: 20px;
     }
 }
 
@@ -889,6 +966,14 @@ h2 {
         text-align: center;
     }
 
+    .join-boxcar-container h2 {
+        font-size: 35px;
+    }
+
+    .join-boxcar-container span {
+        font-size: 12px;
+    }
+
     .email {
         width: 100%;
     }
@@ -897,6 +982,66 @@ h2 {
         width: 10%;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .forma {
+        flex-wrap: wrap;
+        border-radius: 20px;
+        padding: 8px;
+        gap: 4px;
+    }
+
+    .opcija {
+        width: 48%;
+        flex: none;
+    }
+
+    .opcija-border {
+        display: none;
+    }
+
+    .opcija-container {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .forma button {
+        width: 100%;
+        border-radius: 12px;
+        padding: 14px 0;
+    }
+
+    .adv-card {
+        padding: 40px 30px;
+    }
+
+    .adv-card-content h2 {
+        font-size: 20px;
+    }
+
+    .adv-card-content button {
+        height: 40px;
+        width: 110px;
+        font-size: 12px;
+    }
+
+    .adv-card-img img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .premium-brands-container {
+        padding: 40px 20px;
+    }
+
+    .premium-brands-text h2 {
+        font-size: 22px;
+    }
+
+    .premium-brands-text button {
+        width: 100%;
     }
 }
 
@@ -932,6 +1077,40 @@ h2 {
     .logo {
         width: 300px;
     }
+
+    .reason {
+        width: 90%;
+    }
+
+    .reason img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .why-choose-container h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer > div {
+        width: 90%;
+    }
+
+    .footer .flex-row.c-gap-10 {
+        justify-content: center;
+    }
+
+    .footer span {
+        text-align: center;
+    }
 }
 
 @media (max-width:378px) {
@@ -957,5 +1136,9 @@ h2 {
 
     .BoxCar-container span {
         font-size: 13px;
+    }
+
+    .BoxCar-container div:first-of-type {
+        width: 225px;
     }
 }
