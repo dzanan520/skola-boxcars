@@ -1122,6 +1122,22 @@ h2 {
         font-size: 25px;
     }
 
+    .sale-card {
+        width: 300px;
+    }
+
+    .bookmark {
+        margin-left: 250px;
+    }
+
+    .great-price {
+        margin-right: 165px;
+    }
+
+    .low-mileage {
+        margin-right: 165px;
+    }
+
     .ms-container h2 {
         font-size: 25px;
     }
