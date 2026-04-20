@@ -65,6 +65,7 @@ a {
 
 .scroll-auto {
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .text-align-center {
@@ -1082,6 +1083,10 @@ h2 {
 
     .inspiration-container h2 {
         font-size: 30px;
+    }
+
+    .post {
+        width: 300px;
     }
 
     .logo {
