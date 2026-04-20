@@ -680,9 +680,7 @@ h2 {
 .posts {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
 .post {
@@ -690,6 +688,8 @@ h2 {
     flex-direction: column;
     row-gap: 30px;
     width: 447px;
+    position: relative;
+    flex-shrink: 0;
 }
 
 .corner {
