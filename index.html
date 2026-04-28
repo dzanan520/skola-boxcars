@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -18,26 +20,37 @@
     <header class="head">
         <div class="head-container">
             <div class="headL">
-                <img src="/assets/logo.svg" alt="logo">
+                <img src="assets/logo.svg" alt="logo">
                 <div class="flex-row center-all" style="gap: 10px;">
-                    <img src="/assets/phone.svg" alt="">
+                    <img src="assets/phone.svg" alt="">
                     <span>+75 123 456 789</span>
                 </div>
-
             </div>
-            <div class="headC">
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="headC" id="navMenu">
                 <nav>
                     <ul>
-                        <li><a href="">Home</a> <img src="/assets/arrow-down.svg" alt=""></li>
-                        <li><a href="">Listings</a> <img src="/assets/arrow-down.svg" alt=""></li>
-                        <li><a href="">Blog</a> <img src="/assets/arrow-down.svg" alt=""></li>
-                        <li><a href="">Pages</a> <img src="/assets/arrow-down.svg" alt=""></li>
+                        <li><a href="">Home</a> <img src="assets/arrow-down.svg" alt=""></li>
+                        <li><a href="">Listings</a> <img src="assets/arrow-down.svg" alt=""></li>
+                        <li><a href="">Blog</a> <img src="assets/arrow-down.svg" alt=""></li>
+                        <li><a href="">Pages</a> <img src="assets/arrow-down.svg" alt=""></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><img src="/assets/signin.svg" alt=""> <a href="">Sign in</a></li>
+                        <li><img src="assets/signin.svg" alt=""> <a href="">Sign in</a></li>
                     </ul>
                 </nav>
+
+                <div class="mobile-submit">
+                    <button>Submit listing</button>
+                </div>
             </div>
+
             <div class="headR">
                 <button>Submit listing</button>
             </div>
@@ -96,7 +109,7 @@
             </div>
 
             <div class="car-img">
-                <img src="/assets/car-white.png" alt="dream-car">
+                <img src="assets/car-white.png" alt="dream-car">
             </div>
 
         </div>
@@ -111,123 +124,73 @@
             <div class="nav-types">
                 <nav>
                     <ul>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="/assets/suv.svg" alt="">
+                        <li><a href="#">
+                                <div><img src="assets/suv.svg" alt="">
                                     <h4>SUV</h4>
                                 </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="/assets/sedan.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <div><img src="assets/sedan.svg" alt="">
                                     <h4>Sedan</h4>
                                 </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="/assets/hatchback.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <div><img src="assets/hatchback.svg" alt="">
                                     <h4>Hatchback</h4>
                                 </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="/assets/coupe.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <div><img src="assets/coupe.svg" alt="">
                                     <h4>Coupe</h4>
                                 </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="/assets/hybrid.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <div><img src="assets/hybrid.svg" alt="">
                                     <h4>Hybrid</h4>
                                 </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="/assets/convertible.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <div><img src="assets/convertible.svg" alt="">
                                     <h4>Convertible</h4>
                                 </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="/assets/van.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <div><img src="assets/van.svg" alt="">
                                     <h4>Van</h4>
                                 </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="/assets/truck.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <div><img src="assets/truck.svg" alt="">
                                     <h4>Truck</h4>
                                 </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="/assets/electric.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <div><img src="assets/electric.svg" alt="">
                                     <h4>Electric</h4>
                                 </div>
-                            </a>
-                        </li>
+                            </a></li>
                     </ul>
                 </nav>
             </div>
 
-            <!-- Advertisements Boxes -->
-
             <div class="flex-row justify-center c-gap-30 r-gap-30 flex-wrap mt-100">
-
                 <div class="adv-card adv-card-blue">
                     <div class="adv-card-content">
                         <h2>Are You Looking For a Car ?</h2>
                         <span>We are committed to providing our customers with exceptional service.</span>
-                        <button>
-                            <span class="text-white">Get started</span>
-                            <img src="/assets/arrow.svg" alt="">
-                        </button>
+                        <button><span class="text-white">Get started</span><img src="assets/arrow.svg" alt=""></button>
                     </div>
-                    <div class="adv-card-img">
-                        <img src="/assets/electric-car.svg" alt="">
-                    </div>
+                    <div class="adv-card-img"><img src="assets/electric-car.svg" alt=""></div>
                 </div>
 
                 <div class="adv-card adv-card-pink">
                     <div class="adv-card-content">
                         <h2>Do You Want to Sell a Car ?</h2>
                         <span>We are committed to providing our customers with exceptional service.</span>
-                        <button>
-                            <span class="text-white">Get started</span>
-                            <img src="/assets/arrow.svg" alt="">
-                        </button>
+                        <button><span class="text-white">Get started</span><img src="assets/arrow.svg" alt=""></button>
                     </div>
-
-                    <div class="adv-card-img">
-                        <img src="/assets/electric-car2.svg" alt="">
-                    </div>
+                    <div class="adv-card-img"><img src="assets/electric-car2.svg" alt=""></div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -238,252 +201,137 @@
 
             <div class="flex-row justify-center">
                 <ul class="flex-row c-gap-30 mt-15">
-                    <li>
-                        <a href="#">
-                            <div class="stock flex-col r-gap-10">
-                                <span>In Stock</span>
-                                <img src="/assets/Horizontal Divider.svg" alt="">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">Sedan</a>
-                    </li>
-
-                    <li>
-                        <a href="#">SUV</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Convertible</a>
-                    </li>
+                    <li><a href="#">
+                            <div class="stock flex-col r-gap-10"><span>In Stock</span><img
+                                    src="assets/Horizontal Divider.svg" alt=""></div>
+                        </a></li>
+                    <li><a href="#">Sedan</a></li>
+                    <li><a href="#">SUV</a></li>
+                    <li><a href="#">Convertible</a></li>
                 </ul>
             </div>
 
-            <!--Most Searched Cars Cards-->
 
-            <div class="sale-cards mb-50 scroll-auto">
+            <div class="slider-section mb-50">
+                <div class="slider-viewport" id="ms-viewport">
+                    <div class="slider-track" id="ms-track">
 
-                <div class="flex-row c-gap-30 r-gap-30 mt-50">
-
-                    <div class="grow-1"></div>
-
-                    <!--Ford Transit-->
-
-                    <div class="sale-card flex-col align-center shrink-0">
-                        <img src="/assets/ford-transit.png" alt="">
-
-                        <div class="great-price">
-                            <span>Great Price</span>
-                        </div>
-
-                        <div class="bookmark">
-                            <img src="assets/bookmark-icon.svg" alt="">
-                        </div>
-
-                        <div class="mt-20 mb-30">
-                            <h4>Ford Transit - 2021</h4>
-                            <span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
-                        </div>
-
-                        <div class="flex-row c-gap-50">
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/mile.svg" alt="">
-                                <span>2500 Miles</span>
+                        <div class="sale-card flex-col align-center shrink-0">
+                            <img src="assets/ford-transit.png" alt="">
+                            <div class="great-price"><span>Great Price</span></div>
+                            <div class="bookmark"><img src="assets/bookmark-icon.svg" alt=""></div>
+                            <div class="mt-20 mb-30">
+                                <h4>Ford Transit - 2021</h4><span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
                             </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/fuel.svg" alt="">
-                                <span>Diesel</span>
+                            <div class="flex-row c-gap-50">
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/mile.svg"
+                                        alt=""><span>2500 Miles</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/fuel.svg"
+                                        alt=""><span>Diesel</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/man-auto.svg"
+                                        alt=""><span>Manual</span></div>
                             </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/man-auto.svg" alt="">
-                                <span>Manual</span>
-                            </div>
+                            <div class="flex-row mt-20 c-gap-75"><span class="sale-card-price">$22,000</span><a
+                                    href="#">
+                                    <div class="mb-30"><span>View details</span><img class="ml-10"
+                                            src="assets/arrow.svg" alt=""></div>
+                                </a></div>
                         </div>
 
-                        <div class="flex-row mt-20 c-gap-75">
-                            <span class="sale-card-price">$22,000</span>
-                            <a href="#">
-                                <div class="mb-30">
-                                    <span>View details</span>
-                                    <img class="ml-10" src="/assets/arrow.svg" alt="">
-                                </div>
-                            </a>
+                        <div class="sale-card flex-col align-center shrink-0">
+                            <img src="assets/new-glc.png" alt="">
+                            <div class="low-mileage"><span>Low Mileage</span></div>
+                            <div class="bookmark"><img src="assets/bookmark-icon.svg" alt=""></div>
+                            <div class="mt-20 mb-30">
+                                <h4>New GLC - 2023</h4><span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
+                            </div>
+                            <div class="flex-row c-gap-50">
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/mile.svg"
+                                        alt=""><span>50 Miles</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/fuel.svg"
+                                        alt=""><span>Petrol</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/man-auto.svg"
+                                        alt=""><span>Automatic</span></div>
+                            </div>
+                            <div class="flex-row mt-20 c-gap-75"><span class="sale-card-price">$95,000</span><a
+                                    href="#">
+                                    <div class="mb-30"><span>View details</span><img class="ml-10"
+                                            src="assets/arrow.svg" alt=""></div>
+                                </a></div>
                         </div>
+
+                        <div class="sale-card flex-col align-center shrink-0">
+                            <img src="assets/audi-a6.png" alt="">
+                            <div class="bookmark"><img src="assets/bookmark-icon.svg" alt=""></div>
+                            <div class="mt-20 mb-30">
+                                <h4>Audi A6 3.5 - New</h4><span>3.5 D5 PowerPulse Momentum 5dr AWD…</span>
+                            </div>
+                            <div class="flex-row c-gap-50">
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/mile.svg"
+                                        alt=""><span>100 Miles</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/fuel.svg"
+                                        alt=""><span>Petrol</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/man-auto.svg"
+                                        alt=""><span>Automatic</span></div>
+                            </div>
+                            <div class="flex-row mt-20 c-gap-75"><span class="sale-card-price">$58,000</span><a
+                                    href="#">
+                                    <div class="mb-30"><span>View details</span><img class="ml-10"
+                                            src="assets/arrow.svg" alt=""></div>
+                                </a></div>
+                        </div>
+
+                        <div class="sale-card flex-col align-center shrink-0">
+                            <img src="assets/corolla-altis.png" alt="">
+                            <div class="bookmark"><img src="assets/bookmark-icon.svg" alt=""></div>
+                            <div class="mt-20 mb-30">
+                                <h4>Corolla Altis - 2023</h4><span>3.5 D5 PowerPulse Momentum 5dr AWD…</span>
+                            </div>
+                            <div class="flex-row c-gap-50">
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/mile.svg"
+                                        alt=""><span>15000 Miles</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/fuel.svg"
+                                        alt=""><span>Petrol</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/man-auto.svg"
+                                        alt=""><span>CVT</span></div>
+                            </div>
+                            <div class="flex-row mt-20 c-gap-75"><span class="sale-card-price">$22,000</span><a
+                                    href="#">
+                                    <div class="mb-30"><span>View details</span><img class="ml-10"
+                                            src="assets/arrow.svg" alt=""></div>
+                                </a></div>
+                        </div>
+
                     </div>
-
-                    <!--New GLC-->
-
-                    <div class="sale-card flex-col align-center shrink-0">
-                        <img src="/assets/new-glc.png" alt="">
-
-                        <div class="low-mileage">
-                            <span>Low Mileage</span>
-                        </div>
-
-                        <div class="bookmark">
-                            <img src="assets/bookmark-icon.svg" alt="">
-                        </div>
-
-                        <div class="mt-20 mb-30">
-                            <h4>New GLC - 2023</h4>
-                            <span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
-                        </div>
-
-                        <div class="flex-row c-gap-50">
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/mile.svg" alt="">
-                                <span>50 Miles</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/fuel.svg" alt="">
-                                <span>Petrol</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/man-auto.svg" alt="">
-                                <span>Automatic</span>
-                            </div>
-                        </div>
-
-                        <div class="flex-row mt-20 c-gap-75">
-                            <span class="sale-card-price">$95,000</span>
-                            <a href="#">
-                                <div class="mb-30">
-                                    <span>View details</span>
-                                    <img class="ml-10" src="/assets/arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--Audi A6-->
-
-                    <div class="sale-card flex-col align-center shrink-0">
-                        <img src="/assets/audi-a6.png" alt="">
-
-                        <div class="bookmark">
-                            <img src="assets/bookmark-icon.svg" alt="">
-                        </div>
-
-                        <div class="mt-20 mb-30">
-                            <h4>Audi A6 3.5 - New</h4>
-                            <span>3.5 D5 PowerPulse Momentum 5dr AWD…</span>
-                        </div>
-
-                        <div class="flex-row c-gap-50">
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/mile.svg" alt="">
-                                <span>100 Miles</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/fuel.svg" alt="">
-                                <span>Petrol</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/man-auto.svg" alt="">
-                                <span>Automatic</span>
-                            </div>
-                        </div>
-
-                        <div class="flex-row mt-20 c-gap-75">
-                            <span class="sale-card-price">$58,000</span>
-                            <a href="#">
-                                <div class="mb-30">
-                                    <span>View details</span>
-                                    <img class="ml-10" src="/assets/arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--Corolla Altis-->
-
-                    <div class="sale-card flex-col align-center shrink-0">
-                        <img src="/assets/corolla-altis.png" alt="">
-
-                        <div class="bookmark">
-                            <img src="assets/bookmark-icon.svg" alt="">
-                        </div>
-
-                        <div class="mt-20 mb-30">
-                            <h4>Corolla Altis - 2023</h4>
-                            <span>3.5 D5 PowerPulse Momentum 5dr AWD…</span>
-                        </div>
-
-                        <div class="flex-row c-gap-50">
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/mile.svg" alt="">
-                                <span>15000 Miles</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/fuel.svg" alt="">
-                                <span>Petrol</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/man-auto.svg" alt="">
-                                <span>CVT</span>
-                            </div>
-                        </div>
-
-                        <div class="flex-row mt-20 c-gap-75">
-                            <span class="sale-card-price">$22,000</span>
-                            <a href="#">
-                                <div class="mb-30">
-                                    <span>View details</span>
-                                    <img class="ml-10" src="/assets/arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="grow-1"></div>
                 </div>
             </div>
         </div>
 
         <div class="flex-row justify-center c-gap-30">
-            <button class="sale-cards-button"><img src="assets/arrow-left.svg" alt=""></button>
-            <button class="sale-cards-button"><img src="assets/arrow-right.svg" alt=""></button>
+            <button class="sale-cards-button" id="ms-prev"><img src="assets/arrow-left.svg" alt=""></button>
+            <button class="sale-cards-button" id="ms-next"><img src="assets/arrow-right.svg" alt=""></button>
         </div>
-
     </section>
 
     <section class="why-choose">
         <div class="why-choose-container">
             <h2 class="pt-115 text-align-center">Why Choose Us?</h2>
-
             <div class="reasons-why">
-                <div class="reason">
-                    <img src="assets/special-financing.svg" alt="">
-                    <h3 class="mt-20 mb-15">Special Financing Offers</h3>
-                    <span>Our stress-free finance department that can find financial solutions to save you money.</span>
+                <div class="reason"><img src="assets/special-financing.svg" alt="">
+                    <h3 class="mt-20 mb-15">Special Financing Offers</h3><span>Our stress-free finance department that
+                        can find financial solutions to save you money.</span>
                 </div>
-
-                <div class="reason">
-                    <img src="assets/trusted-car.svg" alt="">
-                    <h3 class="mt-20 mb-15">Trusted Car Dealership</h3>
-                    <span>Our stress-free finance department that can find financial solutions to save you money.</span>
+                <div class="reason"><img src="assets/trusted-car.svg" alt="">
+                    <h3 class="mt-20 mb-15">Trusted Car Dealership</h3><span>Our stress-free finance department that can
+                        find financial solutions to save you money.</span>
                 </div>
-
-                <div class="reason">
-                    <img src="assets/transparent-pricing.svg" alt="">
-                    <h3 class="mt-20 mb-15">Transparent Pricing</h3>
-                    <span>Our stress-free finance department that can find financial solutions to save you money.</span>
+                <div class="reason"><img src="assets/transparent-pricing.svg" alt="">
+                    <h3 class="mt-20 mb-15">Transparent Pricing</h3><span>Our stress-free finance department that can
+                        find financial solutions to save you money.</span>
                 </div>
-
-                <div class="reason">
-                    <img src="assets/expert-car.svg" alt="">
-                    <h3 class="mt-20 mb-15">Expert Car Service</h3>
-                    <span>Our stress-free finance department that can find financial solutions to save you money.</span>
+                <div class="reason"><img src="assets/expert-car.svg" alt="">
+                    <h3 class="mt-20 mb-15">Expert Car Service</h3><span>Our stress-free finance department that can
+                        find financial solutions to save you money.</span>
                 </div>
             </div>
         </div>
@@ -491,203 +339,105 @@
 
     <section class="latest-cars">
         <div class="latest-cars-container">
-
             <h2>Latest Cars</h2>
 
-            <!--Latest Cars Cards-->
+            <div class="slider-section mb-50">
+                <div class="slider-viewport" id="lc-viewport">
+                    <div class="slider-track" id="lc-track">
 
-            <div class="sale-cards mb-50 scroll-auto">
-
-                <div class="flex-row c-gap-30 r-gap-30 mt-15">
-
-                    <div class="grow-1"></div>
-
-                    <!--T-Cross-->
-
-                    <div class="sale-card flex-col align-center shrink-0">
-                        <img src="/assets/t-cross.png" alt="">
-
-                        <div class="bookmark">
-                            <img src="assets/bookmark-icon.svg" alt="">
-                        </div>
-
-                        <div class="mt-20 mb-30">
-                            <h4>T-Cross - 2023</h4>
-                            <span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
-                        </div>
-
-                        <div class="flex-row c-gap-50">
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/mile.svg" alt="">
-                                <span>15 Miles</span>
+                        <div class="sale-card flex-col align-center shrink-0">
+                            <img src="assets/t-cross.png" alt="">
+                            <div class="bookmark"><img src="assets/bookmark-icon.svg" alt=""></div>
+                            <div class="mt-20 mb-30">
+                                <h4>T-Cross - 2023</h4><span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
                             </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/fuel.svg" alt="">
-                                <span>Petrol</span>
+                            <div class="flex-row c-gap-50">
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/mile.svg"
+                                        alt=""><span>15 Miles</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/fuel.svg"
+                                        alt=""><span>Petrol</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/man-auto.svg"
+                                        alt=""><span>CVT</span></div>
                             </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/man-auto.svg" alt="">
-                                <span>CVT</span>
-                            </div>
+                            <div class="flex-row mt-20 c-gap-75"><span class="sale-card-price">$15,000</span><a
+                                    href="#">
+                                    <div class="mb-30"><span>View details</span><img class="ml-10"
+                                            src="assets/arrow.svg" alt=""></div>
+                                </a></div>
                         </div>
 
-                        <div class="flex-row mt-20 c-gap-75">
-                            <span class="sale-card-price">$15,000</span>
-                            <a href="#">
-                                <div class="mb-30">
-                                    <span>View details</span>
-                                    <img class="ml-10" src="/assets/arrow.svg" alt="">
-                                </div>
-                            </a>
+                        <div class="sale-card flex-col align-center shrink-0">
+                            <img src="assets/new-glc.png" alt="">
+                            <div class="bookmark"><img src="assets/bookmark-icon.svg" alt=""></div>
+                            <div class="mt-20 mb-30">
+                                <h4>C-Class - 2023</h4><span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
+                            </div>
+                            <div class="flex-row c-gap-50">
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/mile.svg"
+                                        alt=""><span>50 Miles</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/fuel.svg"
+                                        alt=""><span>Petrol</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/man-auto.svg"
+                                        alt=""><span>Automatic</span></div>
+                            </div>
+                            <div class="flex-row mt-20 c-gap-75"><span class="sale-card-price">$150,000</span><a
+                                    href="#">
+                                    <div class="mb-30"><span>View details</span><img class="ml-10"
+                                            src="assets/arrow.svg" alt=""></div>
+                                </a></div>
                         </div>
+
+                        <div class="sale-card flex-col align-center shrink-0">
+                            <img src="assets/ford-transit.png" alt="">
+                            <div class="great-price"><span>Great Price</span></div>
+                            <div class="bookmark"><img src="assets/bookmark-icon.svg" alt=""></div>
+                            <div class="mt-20 mb-30">
+                                <h4>Ford Transit - 2021</h4><span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
+                            </div>
+                            <div class="flex-row c-gap-50">
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/mile.svg"
+                                        alt=""><span>2500 Miles</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/fuel.svg"
+                                        alt=""><span>Diesel</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/man-auto.svg"
+                                        alt=""><span>Manual</span></div>
+                            </div>
+                            <div class="flex-row mt-20 c-gap-75"><span class="sale-card-price">$22,000</span><a
+                                    href="#">
+                                    <div class="mb-30"><span>View details</span><img class="ml-10"
+                                            src="assets/arrow.svg" alt=""></div>
+                                </a></div>
+                        </div>
+
+                        <div class="sale-card flex-col align-center shrink-0">
+                            <img src="assets/new-glc.png" alt="">
+                            <div class="low-mileage"><span>Low Mileage</span></div>
+                            <div class="bookmark"><img src="assets/bookmark-icon.svg" alt=""></div>
+                            <div class="mt-20 mb-30">
+                                <h4>New GLC - 2023</h4><span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
+                            </div>
+                            <div class="flex-row c-gap-50">
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/mile.svg"
+                                        alt=""><span>50 Miles</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/fuel.svg"
+                                        alt=""><span>Petrol</span></div>
+                                <div class="flex-col align-center"><img class="sale-card-icon" src="assets/man-auto.svg"
+                                        alt=""><span>Automatic</span></div>
+                            </div>
+                            <div class="flex-row mt-20 c-gap-75"><span class="sale-card-price">$95,000</span><a
+                                    href="#">
+                                    <div class="mb-30"><span>View details</span><img class="ml-10"
+                                            src="assets/arrow.svg" alt=""></div>
+                                </a></div>
+                        </div>
+
                     </div>
-
-                    <!--C-Class-->
-
-                    <div class="sale-card flex-col align-center shrink-0">
-                        <img src="/assets/new-glc.png" alt="">
-
-
-                        <div class="bookmark">
-                            <img src="assets/bookmark-icon.svg" alt="">
-                        </div>
-
-                        <div class="mt-20 mb-30">
-                            <h4>C-Class - 2023</h4>
-                            <span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
-                        </div>
-
-                        <div class="flex-row c-gap-50">
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/mile.svg" alt="">
-                                <span>50 Miles</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/fuel.svg" alt="">
-                                <span>Petrol</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/man-auto.svg" alt="">
-                                <span>Automatic</span>
-                            </div>
-                        </div>
-
-                        <div class="flex-row mt-20 c-gap-75">
-                            <span class="sale-card-price">$150,000</span>
-                            <a href="#">
-                                <div class="mb-30">
-                                    <span>View details</span>
-                                    <img class="ml-10" src="/assets/arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--Ford Transit-->
-
-                    <div class="sale-card flex-col align-center shrink-0">
-                        <img src="/assets/ford-transit.png" alt="">
-
-                        <div class="great-price">
-                            <span>Great Price</span>
-                        </div>
-
-                        <div class="bookmark">
-                            <img src="assets/bookmark-icon.svg" alt="">
-                        </div>
-
-                        <div class="mt-20 mb-30">
-                            <h4>Ford Transit - 2021</h4>
-                            <span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
-                        </div>
-
-                        <div class="flex-row c-gap-50">
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/mile.svg" alt="">
-                                <span>2500 Miles</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/fuel.svg" alt="">
-                                <span>Diesel</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/man-auto.svg" alt="">
-                                <span>Manual</span>
-                            </div>
-                        </div>
-
-                        <div class="flex-row mt-20 c-gap-75">
-                            <span class="sale-card-price">$22,000</span>
-                            <a href="#">
-                                <div class="mb-30">
-                                    <span>View details</span>
-                                    <img class="ml-10" src="/assets/arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--New GLC-->
-
-                    <div class="sale-card flex-col align-center shrink-0">
-                        <img src="/assets/new-glc.png" alt="">
-
-                        <div class="low-mileage">
-                            <span>Low Mileage</span>
-                        </div>
-
-                        <div class="bookmark">
-                            <img src="assets/bookmark-icon.svg" alt="">
-                        </div>
-
-                        <div class="mt-20 mb-30">
-                            <h4>New GLC - 2023</h4>
-                            <span>4.0 D5 PowerPulse Momentum 5dr AWD…</span>
-                        </div>
-
-                        <div class="flex-row c-gap-50">
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/mile.svg" alt="">
-                                <span>50 Miles</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/fuel.svg" alt="">
-                                <span>Petrol</span>
-                            </div>
-
-                            <div class="flex-col align-center">
-                                <img class="sale-card-icon" src="/assets/man-auto.svg" alt="">
-                                <span>Automatic</span>
-                            </div>
-                        </div>
-
-                        <div class="flex-row mt-20 c-gap-75">
-                            <span class="sale-card-price">$95,000</span>
-                            <a href="#">
-                                <div class="mb-30">
-                                    <span>View details</span>
-                                    <img class="ml-10" src="/assets/arrow.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="grow-1"></div>
-
                 </div>
-
             </div>
 
             <div class="flex-row justify-center c-gap-30">
-                <button class="sale-cards-button"><img src="assets/arrow-left.svg" alt=""></button>
-                <button class="sale-cards-button"><img src="assets/arrow-right.svg" alt=""></button>
+                <button class="sale-cards-button" id="lc-prev"><img src="assets/arrow-left.svg" alt=""></button>
+                <button class="sale-cards-button" id="lc-next"><img src="assets/arrow-right.svg" alt=""></button>
             </div>
         </div>
     </section>
@@ -697,19 +447,12 @@
             <div>
                 <h2>Need Some inspiration?</h2>
             </div>
-
             <div class="inspiration-buttons">
-
                 <button class="inspiration-button">Automatics Cars</button>
-
                 <button class="inspiration-button">SUVs</button>
-
                 <button class="inspiration-button">Electrics Cars</button>
-
                 <button class="inspiration-button">New in Stock</button>
-
                 <button class="inspiration-button">Petrol</button>
-
                 <button class="inspiration-button">Diesel</button>
             </div>
         </div>
@@ -722,7 +465,6 @@
                 <span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                     es</span>
             </div>
-
             <div class="flex-row justify-center r-gap-30 c-gap-30 flex-wrap">
                 <img src="assets/trustpilot.png" alt="">
                 <img src="assets/google.png" alt="">
@@ -736,36 +478,21 @@
             <div class="our-team-naslov">
                 <h2>Our Team</h2>
             </div>
-
             <div class="flex-row c-gap-30 r-gap-30 justify-center flex-wrap">
                 <div class="flex-col align-center">
-                    <h3>Courtney Henry</h3>
-                    <span>Development Manager</span>
-                    <img src="/assets/courtney-henry.png" alt="">
+                    <h3>Courtney Henry</h3><span>Development Manager</span><img src="assets/courtney-henry.png" alt="">
                 </div>
-
                 <div class="flex-col align-center">
-                    <h3>Jerome Bell</h3>
-                    <span>Software Developer</span>
-                    <img src="/assets/jerome-bell-w.png" alt="">
+                    <h3>Jerome Bell</h3><span>Software Developer</span><img src="assets/jerome-bell-w.png" alt="">
                 </div>
-
                 <div class="flex-col align-center">
-                    <h3>Jerome Bell</h3>
-                    <span>Software Tester</span>
-                    <img src="/assets/jerome-bell-b.png" alt="">
+                    <h3>Jerome Bell</h3><span>Software Tester</span><img src="assets/jerome-bell-b.png" alt="">
                 </div>
-
                 <div class="flex-col align-center">
-                    <h3>Arlene McCoy</h3>
-                    <span>Software Developer</span>
-                    <img src="/assets/arlene-mccoy.png" alt="">
+                    <h3>Arlene McCoy</h3><span>Software Developer</span><img src="assets/arlene-mccoy.png" alt="">
                 </div>
-
                 <div class="flex-col align-center">
-                    <h3>Jenny Wilson</h3>
-                    <span>UI/UX Designer</span>
-                    <img src="/assets/jenny-wilson.png" alt="">
+                    <h3>Jenny Wilson</h3><span>UI/UX Designer</span><img src="assets/jenny-wilson.png" alt="">
                 </div>
             </div>
         </div>
@@ -775,71 +502,48 @@
         <div class="latest-blog-container">
             <h2 class="text-align-center mb-40">Latest Blog Posts</h2>
 
-            <div class="posts scroll-auto">
+            <div class="slider-section blog-slider-section">
+                <div class="slider-viewport" id="lb-viewport">
+                    <div class="slider-track blog-track" id="lb-track">
 
-                <div class="grow-1"></div>
-
-                <div class="post">
-                    <img class="border-radius-16" src="/assets/bmw-alpina.png" alt="">
-
-                    <div class="corner">
-                        <span>Sound</span>
-                    </div>
-
-                    <div class="flex-col r-gap-10">
-                        <div class="flex-row align-center c-gap-10">
-                            <span>Admin</span>
-                            <img class="dot" src="/assets/dot.png" alt="">
-                            <span>November 22, 2023</span>
+                        <div class="post">
+                            <img class="border-radius-16" src="assets/bmw-alpina.png" alt="">
+                            <div class="corner"><span>Sound</span></div>
+                            <div class="flex-col r-gap-10">
+                                <div class="flex-row align-center c-gap-10"><span>Admin</span><img class="dot"
+                                        src="assets/dot.png" alt=""><span>November 22, 2023</span></div>
+                                <span class="post-naslov">2024 BMW ALPINA XB7 with exclusive details,
+                                    extraordinary</span>
+                            </div>
                         </div>
 
-                        <span class="post-naslov">2024 BMW ALPINA XB7 with exclusive details, extraordinary</span>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <img class="border-radius-16" src="/assets/bmw-x6-m50i.png" alt="">
-
-                    <div class="corner">
-                        <span>Accessories</span>
-                    </div>
-
-                    <div class="flex-col r-gap-10">
-                        <div class="flex-row align-center c-gap-10">
-                            <span>Admin</span>
-                            <img class="dot" src="/assets/dot.png" alt="">
-                            <span>November 22, 2023</span>
+                        <div class="post">
+                            <img class="border-radius-16" src="assets/bmw-x6-m50i.png" alt="">
+                            <div class="corner"><span>Accessories</span></div>
+                            <div class="flex-col r-gap-10">
+                                <div class="flex-row align-center c-gap-10"><span>Admin</span><img class="dot"
+                                        src="assets/dot.png" alt=""><span>November 22, 2023</span></div>
+                                <span class="post-naslov">BMW X6 M50i is designed to exceed your sportiest.</span>
+                            </div>
                         </div>
 
-                        <span class="post-naslov">BMW X6 M50i is designed to exceed your sportiest.</span>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <img class="border-radius-16" src="/assets/bmw-x5-gold.png" alt="">
-
-                    <div class="corner">
-                        <span>Exterior</span>
-                    </div>
-
-                    <div class="flex-col r-gap-10">
-                        <div class="flex-row align-center c-gap-10">
-                            <span>Admin</span>
-                            <img class="dot" src="/assets/dot.png" alt="">
-                            <span>November 22, 2023</span>
+                        <div class="post">
+                            <img class="border-radius-16" src="assets/bmw-x5-gold.png" alt="">
+                            <div class="corner"><span>Exterior</span></div>
+                            <div class="flex-col r-gap-10">
+                                <div class="flex-row align-center c-gap-10"><span>Admin</span><img class="dot"
+                                        src="assets/dot.png" alt=""><span>November 22, 2023</span></div>
+                                <span class="post-naslov">BMW X5 Gold 2024 Sport Review: Light on port</span>
+                            </div>
                         </div>
 
-                        <span class="post-naslov">BMW X5 Gold 2024 Sport Review: Light on port</span>
                     </div>
                 </div>
-
-                <div class="grow-1"></div>
-
             </div>
 
             <div class="flex-row justify-center c-gap-30 mt-50">
-                <button class="sale-cards-button"><img src="assets/arrow-left.svg" alt=""></button>
-                <button class="sale-cards-button"><img src="assets/arrow-right.svg" alt=""></button>
+                <button class="sale-cards-button" id="lb-prev"><img src="assets/arrow-left.svg" alt=""></button>
+                <button class="sale-cards-button" id="lb-next"><img src="assets/arrow-right.svg" alt=""></button>
             </div>
         </div>
     </section>
@@ -851,16 +555,10 @@
                 <span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                     es</span>
                 <button>
-                    <div>
-                        <span>Show All Brands</span>
-                        <img src="assets/arrow.svg" alt="">
-                    </div>
+                    <div><span>Show All Brands</span><img src="assets/arrow.svg" alt=""></div>
                 </button>
             </div>
-
-            <div>
-                <img class="logo" src="assets/logo-brand.png" alt="">
-            </div>
+            <div><img class="logo" src="assets/logo-brand.png" alt=""></div>
         </div>
     </section>
 
@@ -871,9 +569,7 @@
             <div>
                 <div class="email">
                     <span>Your email address</span>
-                    <button class="sign-up">
-                        <span>Sign up</span>
-                    </button>
+                    <button class="sign-up"><span>Sign up</span></button>
                 </div>
             </div>
         </div>
@@ -881,110 +577,52 @@
 
     <footer>
         <div class="flex-col align-center">
-
             <div class="separator"></div>
-
             <div class="footer">
                 <div class="flex-col r-gap-20">
                     <h2>Company</h2>
-
-                    <a href="#">About Us</a>
-
-                    <a href="#">Blog</a>
-
-                    <a href="">Services</a>
-
-                    <a href="">FAQs</a>
-
-                    <a href="">Terms</a>
-
-                    <a href="">Contact Us</a>
+                    <a href="#">About Us</a><a href="#">Blog</a><a href="">Services</a><a href="">FAQs</a><a
+                        href="">Terms</a><a href="">Contact Us</a>
                 </div>
-
                 <div class="flex-col r-gap-20">
                     <h2>Quick Links</h2>
-
-                    <a href="#">Get in Touch</a>
-
-                    <a href="#">Help center</a>
-
-                    <a href="">Live chat</a>
-
-                    <a href="">How it works</a>
+                    <a href="#">Get in Touch</a><a href="#">Help center</a><a href="">Live chat</a><a href="">How it
+                        works</a>
                 </div>
-
                 <div class="flex-col r-gap-20">
                     <h2>Our Brands</h2>
-
-                    <a href="#">Toyota</a>
-
-                    <a href="#">Porsche</a>
-
-                    <a href="">Audi</a>
-
-                    <a href="">BMW</a>
-
-                    <a href="">Ford</a>
-
-                    <a href="">Nissan</a>
-
-                    <a href="">Peugeot</a>
-
-                    <a href="">Volkswagen</a>
+                    <a href="#">Toyota</a><a href="#">Porsche</a><a href="">Audi</a><a href="">BMW</a><a
+                        href="">Ford</a><a href="">Nissan</a><a href="">Peugeot</a><a href="">Volkswagen</a>
                 </div>
-
                 <div class="flex-col r-gap-20">
                     <h2>Vehicles Type</h2>
-
-                    <a href="#">Sedan</a>
-
-                    <a href="#">Hatchback</a>
-
-                    <a href="">SUV</a>
-
-                    <a href="">Hybrid</a>
-
-                    <a href="">Electric</a>
-
-                    <a href="">Coupe</a>
-
-                    <a href="">Truck</a>
-
-                    <a href="">Convertible</a>
+                    <a href="#">Sedan</a><a href="#">Hatchback</a><a href="">SUV</a><a href="">Hybrid</a><a
+                        href="">Electric</a><a href="">Coupe</a><a href="">Truck</a><a href="">Convertible</a>
                 </div>
-
                 <div class="flex-col r-gap-20">
                     <h2>Sale Hours</h2>
-
                     <p>Monday - Friday: 09:00AM - 09:00 PM</p>
-
                     <p>Saturday: 09:00AM - 07:00PM</p>
-
                     <p>Sunday: Closed</p>
-
                     <div class="flex-col r-gap-30 mt-40">
                         <h2>Connect With Us</h2>
-
                         <div class="flex-row c-gap-10">
-                            <img src="assets/facebook.png" alt="">
-                            <img src="assets/twitter.png" alt="">
-                            <img src="assets/instagram.png" alt="">
-                            <img src="assets/linkedin.png" alt="">
+                            <img src="assets/facebook.png" alt=""><img src="assets/twitter.png" alt=""><img
+                                src="assets/instagram.png" alt=""><img src="assets/linkedin.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="separator"></div>
-
             <div class="footer">
                 <span>© 2024 exemple.com. All rights reserved.</span>
-
                 <span>Terms & Conditions • Privacy Notice</span>
             </div>
         </div>
-
     </footer>
+
+
+
 </body>
 
 </html>
