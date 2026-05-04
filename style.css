@@ -562,7 +562,7 @@ h2 {
 }
 
 .slider-viewport {
-    overflow-x: auto;
+    overflow: hidden;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     padding: 10px 0 10px 0;
@@ -583,19 +583,6 @@ h2 {
 
 .blog-track {
     align-items: flex-start;
-}
-
-@media (min-width: 1400px) {
-    .slider-viewport {
-        overflow: hidden;
-        padding: 10px 0;
-    }
-
-    .slider-track {
-        width: auto;
-        margin: 0;
-        justify-content: flex-start;
-    }
 }
 
 .bookmark {
@@ -914,6 +901,25 @@ h2 {
     }
 }
 
+@media (max-width: 1550px) {
+    .reasons-why {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        justify-items: center;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reason {
+        width: 100%;
+        max-width: 311px;
+    }
+}
+
+
 @media (max-width: 1440px) {
     .car-banner>div {
         width: 90%;
@@ -921,6 +927,15 @@ h2 {
 
     .nav-types ul {
         flex-wrap: wrap;
+    }
+
+    .slider-viewport {
+        overflow: hidden;
+    }
+
+    .slider-track {
+        width: max-content;
+        justify-content: flex-start;
     }
 }
 
@@ -986,10 +1001,6 @@ h2 {
 
     .footer>div {
         width: 28%;
-    }
-
-    .sale-card {
-        width: 290px;
     }
 
     .bookmark {
@@ -1132,11 +1143,6 @@ h2 {
         width: 300px;
     }
 
-    @media (min-width: 1400px) {
-        .blog-slider-section .slider-track {
-            padding-left: calc((100vw - (300px * 3 + 30px * 2)) / 2);
-        }
-    }
 }
 
 @media (max-width: 700px) {
@@ -1179,25 +1185,6 @@ h2 {
         width: 10%;
         display: flex;
         justify-content: center;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .sale-card {
-        width: 280px;
-    }
-
-    .bookmark {
-        margin-left: 225px;
-    }
-
-    .great-price {
-        margin-right: 150px;
-    }
-
-    .low-mileage {
-        margin-right: 145px;
     }
 }
 
@@ -1341,22 +1328,6 @@ h2 {
 
     .inspiration-container h2 {
         font-size: 25px;
-    }
-
-    .sale-card {
-        width: 260px;
-    }
-
-    .bookmark {
-        margin-left: 205px;
-    }
-
-    .great-price {
-        margin-right: 140px;
-    }
-
-    .low-mileage {
-        margin-right: 135px;
     }
 
     .ms-container h2 {

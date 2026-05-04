@@ -21,15 +21,16 @@ function initSlider(trackId, prevId, nextId) {
 
     let currentIndex = 0;
 
-    function getSlides()  { return Array.from(track.children); }
-    function getGap()     { return parseInt(getComputedStyle(track).gap) || 30; }
+    function getSlides()    { return Array.from(track.children); }
+    function getGap()       { return parseInt(getComputedStyle(track).gap) || 30; }
+    function isMobileMode() { return window.innerWidth <= 1400; }
 
     function getVisibleCount() {
-        const viewport    = track.parentElement;
-        const vw          = viewport.offsetWidth;
-        const slides      = getSlides();
+        if (isMobileMode()) return 1;
+        const vw         = track.parentElement.offsetWidth;
+        const slides     = getSlides();
         if (!slides.length) return 1;
-        const slideWidth  = slides[0].offsetWidth;
+        const slideWidth = slides[0].offsetWidth;
         return Math.max(1, Math.floor((vw + getGap()) / (slideWidth + getGap())));
     }
 
@@ -40,10 +41,25 @@ function initSlider(trackId, prevId, nextId) {
     function slideTo(index) {
         const slides = getSlides();
         if (!slides.length) return;
-        const slideWidth = slides[0].offsetWidth + getGap();
+
         const max = getMaxIndex();
         currentIndex = Math.max(0, Math.min(index, max));
-        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+        if (isMobileMode()) {
+            // Sakrij sve, prikaži samo aktivnu karticu
+            slides.forEach((slide, i) => {
+                slide.style.display = i === currentIndex ? '' : 'none';
+            });
+            track.style.transform = 'none';
+        } else {
+            // Prikaži sve, koristi transform za pomicanje
+            slides.forEach(slide => { slide.style.display = ''; });
+            const slideWidth = slides[0].offsetWidth;
+            const gap        = getGap();
+            const offset     = currentIndex * (slideWidth + gap);
+            track.style.transform = `translateX(-${offset}px)`;
+        }
+
         prevBtn.style.opacity = currentIndex === 0   ? '0.35' : '1';
         nextBtn.style.opacity = currentIndex >= max  ? '0.35' : '1';
     }
@@ -59,9 +75,7 @@ function initSlider(trackId, prevId, nextId) {
     track.addEventListener('touchend', e => {
         const diff = touchStartX - e.changedTouches[0].clientX;
         if (Math.abs(diff) > 40) {
-            diff > 0
-                ? slideTo(currentIndex + 1)
-                : slideTo(currentIndex - 1);
+            diff > 0 ? slideTo(currentIndex + 1) : slideTo(currentIndex - 1);
         }
     });
 
