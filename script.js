@@ -19,19 +19,42 @@ function initSlider(trackId, prevId, nextId) {
     const nextBtn = document.getElementById(nextId);
     if (!track || !prevBtn || !nextBtn) return;
 
+    const viewport = track.parentElement;
     let currentIndex = 0;
 
     function getSlides()    { return Array.from(track.children); }
     function getGap()       { return parseInt(getComputedStyle(track).gap) || 30; }
-    function isMobileMode() { return window.innerWidth <= 1400; }
+
+    const isBlog = trackId === 'lb-track';
 
     function getVisibleCount() {
-        if (isMobileMode()) return 1;
-        const vw         = track.parentElement.offsetWidth;
-        const slides     = getSlides();
-        if (!slides.length) return 1;
+        const vw = window.innerWidth;
+        if (vw > 1400) {
+            const slides     = getSlides();
+            if (!slides.length) return 1;
+            const slideWidth = slides[0].offsetWidth;
+            const vpWidth    = viewport.offsetWidth;
+            return Math.max(1, Math.floor((vpWidth + getGap()) / (slideWidth + getGap())));
+        }
+        if (isBlog) return 1;
+        if (vw > 1045) return 3;
+        if (vw > 695)  return 2;
+        return 1;
+    }
+
+    function setViewportWidth() {
+        const vw = window.innerWidth;
+        if (vw > 1400) {
+            viewport.style.width = '';
+            return;
+        }
+        const slides = getSlides();
+        if (!slides.length) return;
+        const count      = getVisibleCount();
+        const gap        = getGap();
         const slideWidth = slides[0].offsetWidth;
-        return Math.max(1, Math.floor((vw + getGap()) / (slideWidth + getGap())));
+        const w          = count * slideWidth + (count - 1) * gap;
+        viewport.style.width = w + 'px';
     }
 
     function getMaxIndex() {
@@ -45,23 +68,21 @@ function initSlider(trackId, prevId, nextId) {
         const max = getMaxIndex();
         currentIndex = Math.max(0, Math.min(index, max));
 
-        if (isMobileMode()) {
-            // Sakrij sve, prikaži samo aktivnu karticu
-            slides.forEach((slide, i) => {
-                slide.style.display = i === currentIndex ? '' : 'none';
-            });
-            track.style.transform = 'none';
-        } else {
-            // Prikaži sve, koristi transform za pomicanje
-            slides.forEach(slide => { slide.style.display = ''; });
-            const slideWidth = slides[0].offsetWidth;
-            const gap        = getGap();
-            const offset     = currentIndex * (slideWidth + gap);
-            track.style.transform = `translateX(-${offset}px)`;
-        }
+        slides.forEach(s => { s.style.display = ''; });
+        const slideWidth = slides[0].offsetWidth;
+        const gap        = getGap();
+        const offset     = currentIndex * (slideWidth + gap);
+        track.style.transform = 'translateX(-' + offset + 'px)';
 
-        prevBtn.style.opacity = currentIndex === 0   ? '0.35' : '1';
-        nextBtn.style.opacity = currentIndex >= max  ? '0.35' : '1';
+        prevBtn.style.opacity = currentIndex === 0  ? '0.35' : '1';
+        nextBtn.style.opacity = currentIndex >= max ? '0.35' : '1';
+    }
+
+    function refresh() {
+        setViewportWidth();
+        const max = getMaxIndex();
+        if (currentIndex > max) currentIndex = max;
+        slideTo(currentIndex);
     }
 
     prevBtn.addEventListener('click', () => slideTo(currentIndex - 1));
@@ -71,7 +92,6 @@ function initSlider(trackId, prevId, nextId) {
     track.addEventListener('touchstart', e => {
         touchStartX = e.touches[0].clientX;
     }, { passive: true });
-
     track.addEventListener('touchend', e => {
         const diff = touchStartX - e.changedTouches[0].clientX;
         if (Math.abs(diff) > 40) {
@@ -79,8 +99,13 @@ function initSlider(trackId, prevId, nextId) {
         }
     });
 
-    slideTo(0);
-    window.addEventListener('resize', () => slideTo(currentIndex));
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(refresh, 80);
+    });
+
+    refresh();
 }
 
 initSlider('ms-track', 'ms-prev', 'ms-next');

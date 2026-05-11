@@ -578,7 +578,7 @@ h2 {
     width: max-content;
     justify-content: center;
     margin: 0 auto;
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .blog-track {
@@ -928,6 +928,12 @@ h2 {
     .nav-types ul {
         flex-wrap: wrap;
     }
+}
+
+@media (max-width: 1400px) {
+    .slider-section {
+        justify-content: center;
+    }
 
     .slider-viewport {
         overflow: hidden;
@@ -936,6 +942,7 @@ h2 {
     .slider-track {
         width: max-content;
         justify-content: flex-start;
+        will-change: transform;
     }
 }
 
@@ -1001,10 +1008,6 @@ h2 {
 
     .footer>div {
         width: 28%;
-    }
-
-    .bookmark {
-        margin-left: 234px;
     }
 
     .car-img>img {
